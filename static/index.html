@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Boostrap -->
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/5/yeti/bootstrap.min.css"
+    />
+    <!-- Custom css -->
+    <link rel="stylesheet" href="static/main.css" />
+    <title>Python Flask App</title>
+  </head>
+  <body class="bg-dark text-white">
+    <div class="container">
+      <div class="col-md-4 offset-md-4">
+        <h1>Flask PostgreSQL CRUD</h1>
+        <form id="userForm" class="card card-body text-white" style="background-color: #202020;" action="">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            placeholder="username"
+            name="username"
+            id=""
+            class="form-control mb-2"
+            required
+          />
+          
+          <label for="email">Email</label>
+          <input
+            type="email"
+            placeholder="email"
+            name="email"
+            id=""
+            class="form-control mb-2"
+            required
+          />
+
+          <label for="password">Password</label>
+          <input
+            type="password"
+            placeholder="password"
+            name="password"
+            id=""
+            class="form-control mb-2"
+            required
+          />
+          <button class="btn btn-primary">Save</button>
+        </form>
+
+        <ul id="userList" class="list-group">
+        </ul>
+      </div>
+    </div>
+    <script src="static/main.js"></script>
+  </body>
+</html>
